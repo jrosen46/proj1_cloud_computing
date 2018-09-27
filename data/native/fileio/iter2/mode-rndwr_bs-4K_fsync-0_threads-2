@@ -1,0 +1,39 @@
+Mon Sep 24 21:52:40 UTC 2018
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 2
+
+Extra file open flags: 0
+128 files, 64Mb each
+8Gb total file size
+Block size 4Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random write test
+Threads started!
+Time limit exceeded, exiting...
+(last message repeated 1 times)
+Done.
+
+Operations performed:  0 Read, 273062 Write, 0 Other = 273062 Total
+Read 0b  Written 1.0416Gb  Total transferred 1.0416Gb  (8.8887Mb/sec)
+ 2275.50 Requests/sec executed
+
+Test execution summary:
+    total time:                          120.0011s
+    total number of events:              273062
+    total time taken by event execution: 239.9008
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.88ms
+         max:                                330.46ms
+         approx.  95 percentile:               0.02ms
+
+Threads fairness:
+    events (avg/stddev):           136531.0000/58.00
+    execution time (avg/stddev):   119.9504/0.00
+
+Mon Sep 24 21:54:41 UTC 2018
